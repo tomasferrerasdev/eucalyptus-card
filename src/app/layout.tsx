@@ -1,8 +1,20 @@
 import { SmoothLayout } from '@/components';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 
-const inter = Inter({ subsets: ['latin'] });
+const uberMove = localFont({
+  src: [
+    {
+      path: '../../public/fonts/UberMoveBold.otf',
+      weight: '700',
+    },
+    {
+      path: '../../public/fonts/UberMoveMedium.otf',
+      weight: '400',
+    },
+  ],
+  variable: '--font-uber-move',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={uberMove.variable}>
         <SmoothLayout>{children}</SmoothLayout>
       </body>
     </html>
