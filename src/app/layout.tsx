@@ -1,6 +1,7 @@
 import { SmoothLayout } from '@/components';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import '../_styles/globals.scss';
 
 const uberMove = localFont({
   src: [
