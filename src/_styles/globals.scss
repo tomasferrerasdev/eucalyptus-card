@@ -77,3 +77,15 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.h1 {
+  font-size: clamp(2.5em, 5vw, 6em);
+}
+
+.h2 {
+  font-size: clamp(2.5em, 5vw, 4em);
+}
+
+.p {
+  font-size: clamp(1.5em, 5vw, 2.25em);
+}
