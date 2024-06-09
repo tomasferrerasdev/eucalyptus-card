@@ -13,11 +13,10 @@
 
   .loaderLabel {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 24px;
+    top: 24px;
     display: flex;
     flex-direction: column;
-    padding: 24px;
 
     font-weight: 400;
     color: var(--gray-300);
@@ -45,9 +44,8 @@
     @media (width > $breakpoint-mob) {
       display: block;
       position: absolute;
-      padding: 24px;
-      bottom: 0;
-      left: 0;
+      bottom: 24px;
+      left: 24px;
       color: var(--white);
     }
 
