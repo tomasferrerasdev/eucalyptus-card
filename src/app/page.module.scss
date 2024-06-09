@@ -1,0 +1,18 @@
+.main {
+  width: 100%;
+  display: block;
+  background-color: var(--black);
+
+  .intro {
+    position: relative;
+    display: flex;
+    min-height: 100svh;
+    overflow: hidden;
+    background-color: var(--black);
+
+    &__video {
+      position: absolute;
+      inset: 0;
+    }
+  }
+}

@@ -1,7 +1,25 @@
+import {
+  PageTransitionLayout,
+  ParallaxSection,
+  VideoComponent,
+} from '@/components';
+import styles from './page.module.scss';
+
 export default function Home() {
   return (
-    <main style={{ height: '200vh', fontFamily: 'var(--font-uber-move)' }}>
-      <h1>content</h1>
-    </main>
+    <PageTransitionLayout>
+      <main className={styles.main}>
+        <ParallaxSection parallaxValues={[-400, 400]}>
+          <section className={styles.intro}>
+            <ParallaxSection
+              parallaxValues={[-300, 300]}
+              className={styles.intro__video}
+            >
+              <VideoComponent src="/video/hero_video.mp4" />
+            </ParallaxSection>
+          </section>
+        </ParallaxSection>
+      </main>
+    </PageTransitionLayout>
   );
 }

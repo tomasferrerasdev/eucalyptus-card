@@ -1,10 +1,12 @@
 'use client';
+import { useLoadingManager } from '@/store/useLoadingManager';
 import { AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import styles from './Loader.module.scss';
 import { LoaderContent } from './LoaderContent/LoaderContent';
 
 export const Loader = () => {
+  const { setIsLoaded } = useLoadingManager();
   const [progress, setProgress] = useState<number>(0);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -13,7 +15,6 @@ export const Loader = () => {
       setProgress((prevState) => {
         if (prevState === 3) {
           clearInterval(progressInterval);
-          setIsVisible(false);
           return prevState;
         }
         window.scrollTo(0, 0);
@@ -24,6 +25,14 @@ export const Loader = () => {
       clearInterval(progressInterval);
     };
   }, []);
+
+  useEffect(() => {
+    if (progress === 3) {
+      setIsVisible(false);
+      setIsLoaded(true);
+    }
+  }, [progress]);
+
   return (
     <AnimatePresence>
       {isVisible && (
