@@ -1,4 +1,4 @@
-import { Benefits, Hero, PageTransitionLayout } from '@/components';
+import { Benefits, Discover, Hero, PageTransitionLayout } from '@/components';
 import styles from './page.module.scss';
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <main className={styles.main}>
         <Hero />
         <Benefits />
+        <Discover />
       </main>
     </PageTransitionLayout>
   );
