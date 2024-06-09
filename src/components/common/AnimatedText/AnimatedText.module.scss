@@ -1,0 +1,10 @@
+.split {
+  position: relative;
+  display: inline-block;
+
+  &__word {
+    display: inline-block;
+    transform-origin: bottom left;
+    will-change: transform;
+  }
+}
