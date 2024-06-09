@@ -1,0 +1,16 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75em;
+  white-space: nowrap;
+  font-family: var(--font-uber-move);
+  font-size: 1.25em;
+  width: fit-content;
+  border-radius: 200px;
+  padding: 0.5em 3.75em;
+
+  &.white {
+    background-color: var(--white);
+  }
+}
