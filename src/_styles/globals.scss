@@ -64,7 +64,7 @@ li {
 
 html {
   height: 200vh;
-
+  background-color: var(--black);
   backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
   text-size-adjust: 100%;
@@ -75,6 +75,13 @@ html {
   }
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .h1 {
