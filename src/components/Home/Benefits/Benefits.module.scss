@@ -1,0 +1,15 @@
+.benefitsWrapper {
+  padding-top: 100px;
+  height: 110vh;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+
+  .titleContainer {
+    h2 {
+      color: var(--white);
+      font-family: var(--font-uber-move);
+    }
+  }
+}
