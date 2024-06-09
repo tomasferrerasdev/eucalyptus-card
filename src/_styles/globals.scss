@@ -1,6 +1,4 @@
-$breakpoint-mob: 566px;
-$breakpoint-tablet: 991px;
-$breakpoint-desktop: 1199px;
+@import 'variables';
 
 :root {
   --font-h1: 300 88rem / 96% var(--font-family-primary);
@@ -9,8 +7,9 @@ $breakpoint-desktop: 1199px;
   --white: #fff;
   --black: #000;
   --gray-200: #cdcdcd;
-  --gray-300: #1d1d1d;
-  --gray-400: #111111;
+  --gray-300: #b8b8b8;
+  --gray-400: #1d1d1d;
+  --gray-500: #111111;
 
   --ease: ease;
   --move-duration: 0.5s;
