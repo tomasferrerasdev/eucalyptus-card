@@ -1,0 +1,14 @@
+@import '@/_styles/variables';
+
+.marqueeContainer {
+  z-index: 1;
+  font-size: clamp(40px, 20vw, 184px);
+  color: var(--white);
+  font-family: var(--font-uber-move);
+  white-space: nowrap;
+
+  span {
+    display: inline-block;
+    user-select: none;
+  }
+}

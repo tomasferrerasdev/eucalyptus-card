@@ -1,0 +1,60 @@
+@import '@/_styles/variables';
+
+.intro {
+  position: relative;
+  display: flex;
+  min-height: 100svh;
+  overflow: hidden;
+  background-color: var(--black);
+  border-radius: 0 0 40px 40px;
+
+  &__video {
+    position: absolute;
+    inset: 0;
+    opacity: 0.6;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 40px;
+    gap: 40px;
+
+    @media (width > $breakpoint-mob) {
+      padding-bottom: 24px;
+    }
+
+    &__title {
+      font-weight: 400;
+      font-family: var(--font-uber-move);
+      max-width: 714px;
+      color: var(--white);
+    }
+
+    &__bottom {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 32px;
+      justify-content: space-between;
+      width: 100%;
+
+      @media (width > $breakpoint-mob) {
+        padding-top: 40px;
+        flex-direction: row;
+        align-items: center;
+        border-top: 1px solid var(--gray-200);
+      }
+
+      .subtitle {
+        font-weight: 400;
+        font-size: 1.25em;
+        font-family: var(--font-uber-move);
+        color: var(--white);
+        max-width: 425px;
+      }
+    }
+  }
+}
