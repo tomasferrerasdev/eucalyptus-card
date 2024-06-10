@@ -1,4 +1,4 @@
-import { Benefits, Discover, FAQs, Hero } from '@/components';
+import { Benefits, CTA, Discover, FAQs, Hero } from '@/components';
 import styles from './page.module.scss';
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <Benefits />
       <Discover />
       <FAQs />
+      <CTA />
     </main>
     //</PageTransitionLayout>
   );

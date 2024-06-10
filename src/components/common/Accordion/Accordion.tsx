@@ -82,7 +82,6 @@ export const Accordion = ({
               exit={{ opacity: 0 }}
             >
               <div
-                className={styles['item__dropdownMenu_description']}
                 dangerouslySetInnerHTML={{ __html: description as string }}
               />
             </motion.div>
