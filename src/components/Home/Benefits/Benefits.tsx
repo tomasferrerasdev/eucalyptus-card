@@ -7,7 +7,7 @@ export const Benefits = () => {
     <ParallaxSection parallaxValues={[10, 20]}>
       <section className={styles.benefitsWrapper}>
         <div className={`${styles.titleContainer} container`}>
-          <h2 className="h2">With MINT, </h2>
+          <h2 className="h2">With Eucalyptus, </h2>
           <h2 className="h2">it really adds up.</h2>
         </div>
         <div className="carousel">

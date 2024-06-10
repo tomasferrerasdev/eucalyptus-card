@@ -35,8 +35,8 @@ export const Hero = () => {
                 </Link>
                 <div className={styles.subtitle}>
                   <AnimatedElement delay={0.2}>
-                    Mint Card is proud to present our fresh design take on the
-                    iconic Silver Buffalo Round
+                    Eucalyptus Card is proud to present our fresh design take on
+                    the iconic Silver Buffalo Round
                   </AnimatedElement>
                 </div>
               </div>
