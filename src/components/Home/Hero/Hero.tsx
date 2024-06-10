@@ -35,7 +35,7 @@ export const Hero = () => {
                 </Link>
                 <div className={styles.subtitle}>
                   <AnimatedElement delay={0.2}>
-                    Mason Mint is proud to present our fresh design take on the
+                    Mint Card is proud to present our fresh design take on the
                     iconic Silver Buffalo Round
                   </AnimatedElement>
                 </div>
