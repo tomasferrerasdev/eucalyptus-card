@@ -69,6 +69,7 @@ html {
   -webkit-font-smoothing: antialiased;
   text-size-adjust: 100%;
   text-rendering: optimizelegibility;
+  cursor: none;
 
   &::-webkit-scrollbar {
     display: none;

@@ -1,4 +1,4 @@
-import { SmoothLayout } from '@/components';
+import { CustomCursor, SmoothLayout } from '@/components';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import '../../_styles/globals.scss';
@@ -30,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={uberMove.variable}>
+        <CustomCursor />
         <SmoothLayout>{children}</SmoothLayout>
       </body>
     </html>
