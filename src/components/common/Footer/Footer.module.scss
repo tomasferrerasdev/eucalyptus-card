@@ -1,0 +1,72 @@
+@import '@/_styles/variables';
+
+.footer {
+  width: 100%;
+  background-color: var(--gray-500);
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 48px;
+
+    @media (width >= $breakpoint-mob) {
+      flex-direction: row;
+    }
+
+    .footerRight {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      font-family: var(--font-uber-move);
+      color: var(--white);
+
+      &__content {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        p {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .sitemap {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      color: var(--white);
+      font-family: var(--font-uber-move);
+
+      h3 {
+        color: var(--gray-300);
+        font-weight: 400;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        li {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
