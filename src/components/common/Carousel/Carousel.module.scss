@@ -1,0 +1,73 @@
+@import '@/_styles/variables';
+
+.slider {
+  max-width: 100%;
+  overflow: hidden;
+  transition: 0.4s ease-out transform;
+  margin-left: 16px;
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.slides {
+  display: flex;
+  list-style: none;
+  will-change: transform;
+
+  &:hover {
+    cursor: grab;
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  li {
+    &:not(:last-of-type) {
+      margin-right: 14px;
+    }
+
+    .slide {
+      background-color: var(--white);
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      user-select: none;
+      border-radius: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 34px;
+      font-family: var(--font-uber-move);
+
+      height: 354px;
+      width: 312px;
+
+      @media (width >= $breakpoint-mob) {
+        height: 513px;
+        width: 452px;
+      }
+
+      p {
+        max-width: 300px;
+      }
+
+      .circleButtonContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .circleButton {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 54px;
+          height: 54px;
+          border-radius: 50%;
+          background-color: var(--black);
+        }
+      }
+    }
+  }
+}

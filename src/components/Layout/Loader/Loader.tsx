@@ -31,7 +31,7 @@ export const Loader = () => {
       setIsVisible(false);
       setIsLoaded(true);
     }
-  }, [progress]);
+  }, [progress, setIsLoaded]);
 
   return (
     <AnimatePresence>

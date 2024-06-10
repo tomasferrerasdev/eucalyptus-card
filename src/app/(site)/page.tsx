@@ -6,7 +6,7 @@ export default function Home() {
     <PageTransitionLayout>
       <main className={styles.main}>
         <Hero />
-        <Benefits benefits={[]} />
+        <Benefits />
         <Discover />
       </main>
     </PageTransitionLayout>
