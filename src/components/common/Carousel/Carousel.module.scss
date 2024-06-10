@@ -4,7 +4,7 @@
   max-width: 100%;
   overflow: hidden;
   transition: 0.4s ease-out transform;
-  margin-left: 16px;
+
   &:active {
     transform: scale(0.95);
   }
@@ -25,7 +25,15 @@
 
   li {
     &:not(:last-of-type) {
-      margin-right: 14px;
+      margin-right: 16px;
+    }
+    &:first-of-type {
+      margin-left: 16px;
+    }
+    @media (width >= 1430px) {
+      &:first-of-type {
+        margin-left: calc(((100vw - 1400px) / 2) + 16px);
+      }
     }
 
     .slide {

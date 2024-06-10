@@ -1,17 +1,19 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+import { useWindowSize } from 'usehooks-ts';
 import styles from './Carousel.module.scss';
 import { BENEFITS } from './benefits';
 
 export const Carousel = () => {
+  const { width } = useWindowSize();
   const sliderRef = useRef<any>(null);
   const slidesRef = useRef<any>(null);
 
   const [sliderWidth, setSliderWidths] = useState(0);
   const [slidesWidth, setSlidesWidths] = useState<any>(0);
 
-  const slideMarginRight = 15;
+  const slideMarginRight = width / 18;
   const totalSlidesMarginRight = slideMarginRight * BENEFITS.length;
 
   useEffect(() => {
@@ -39,7 +41,7 @@ export const Carousel = () => {
       window.removeEventListener('resize', measureSliderWidth);
       window.removeEventListener('resize', measureSlidesWidth);
     };
-  }, [sliderWidth, slidesWidth]);
+  }, [sliderWidth, slidesWidth, width]);
 
   return (
     <div ref={sliderRef} className={styles.slider}>

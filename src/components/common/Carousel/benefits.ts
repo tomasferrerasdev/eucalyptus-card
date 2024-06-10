@@ -15,4 +15,12 @@ export const BENEFITS = [
     id: 3,
     label: 'Always safe, private, and secure',
   },
+  {
+    id: 4,
+    label: 'Always safe, private, and secure',
+  },
+  {
+    id: 5,
+    label: 'Always safe, private, and secure',
+  },
 ];
