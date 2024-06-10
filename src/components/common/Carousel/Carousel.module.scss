@@ -15,14 +15,6 @@
   list-style: none;
   will-change: transform;
 
-  &:hover {
-    cursor: grab;
-  }
-
-  &:active {
-    cursor: grabbing;
-  }
-
   li {
     &:not(:last-of-type) {
       margin-right: 16px;

@@ -1,5 +1,5 @@
 'use client';
-import { Coin, Marquee, ParallaxSection } from '@/components';
+import { Coin, Marquee, ParallaxSection, QRScan } from '@/components';
 import { useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import styles from './Discover.module.scss';
@@ -18,6 +18,7 @@ export const Discover = () => {
     >
       <section className={`${styles.benefitsWrapper}`} ref={targetRef}>
         <div className={styles.stickyContainer}>
+          <QRScan />
           <Coin scrollYProgress={scrollYProgress} />
           <Marquee
             text={'Discover meet MINT credit card. Safe, private and secure.'}

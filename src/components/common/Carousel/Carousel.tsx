@@ -44,7 +44,7 @@ export const Carousel = () => {
   }, [sliderWidth, slidesWidth, width]);
 
   return (
-    <div ref={sliderRef} className={styles.slider}>
+    <div ref={sliderRef} className={`${styles.slider}`}>
       <motion.ul
         ref={slidesRef}
         drag="x"
@@ -54,7 +54,7 @@ export const Carousel = () => {
         }}
         dragElastic={0.2}
         dragTransition={{ bounceDamping: 18 }}
-        className={styles.slides}
+        className={`${styles.slides}`}
       >
         {BENEFITS.map((benefit) => (
           <li key={benefit.id}>
