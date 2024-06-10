@@ -4,15 +4,15 @@ import { MotionValue, useMotionValueEvent, useTransform } from 'framer-motion';
 import Lottie, { LottieRefCurrentProps } from 'lottie-react';
 import { useEffect, useRef, useState } from 'react';
 import { useWindowSize } from 'usehooks-ts';
-import styles from './Discover.module.scss';
+import styles from './Coin.module.scss';
 import { FlipCoinTypes } from './assets/FlipCoinTypes';
 const loaderJsonPromise = import('./assets/flipCoin.json');
 
-interface DiscoverProps {
+interface CoinProps {
   scrollYProgress: MotionValue<number>;
 }
 
-export const Discover = ({ scrollYProgress }: DiscoverProps) => {
+export const Coin = ({ scrollYProgress }: CoinProps) => {
   const refLottie = useRef<LottieRefCurrentProps | null>(null);
   const progress = useTransform(scrollYProgress, [0, 1], [0, 61]);
   const { width } = useWindowSize();

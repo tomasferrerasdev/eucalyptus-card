@@ -7,7 +7,7 @@ interface State {
   toggleFirstLoading: () => void;
 }
 
-export const useLoadingManager = create<State>((set, get) => ({
+export const useLoadingManager = create<State>((set) => ({
   isFirstLoading: true,
   isLoaded: false,
   setIsLoaded: (isLoaded) => set({ isLoaded }),

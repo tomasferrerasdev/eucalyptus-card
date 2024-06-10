@@ -1,0 +1,19 @@
+@import '@/_styles/variables';
+
+.benefitsWrapper {
+  top: 0;
+  bottom: 0;
+  height: 600vh;
+  background-color: var(--black);
+
+  .stickyContainer {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+}

@@ -3,7 +3,7 @@ import { motion, useInView } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import styles from './VideoComponent.module.scss';
 
-interface VideoComponent {
+interface VideoComponentProps {
   className?: string;
   autoPlay?: boolean;
   loop?: boolean;
@@ -21,7 +21,7 @@ export const VideoComponent = ({
   src = '/video/hero_video.mp4',
   poster,
   controls = false,
-}: VideoComponent) => {
+}: VideoComponentProps) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const inView = useInView(videoRef);
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -38,7 +38,9 @@ export const VideoComponent = ({
         } else {
           setIsVisible(true);
         }
-      } catch (error) {}
+      } catch (error) {
+        console.log(error);
+      }
     };
 
     playVideo();

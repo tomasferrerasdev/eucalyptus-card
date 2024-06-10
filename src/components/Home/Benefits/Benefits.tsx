@@ -1,30 +1,16 @@
-'use client';
-import { Discover, Marquee, ParallaxSection } from '@/components';
-import { useScroll } from 'framer-motion';
-import { useRef } from 'react';
+import { ParallaxSection } from '@/components/Layout';
+import { Carousel } from '@/components/common/Carousel/Carousel';
 import styles from './Benefits.module.scss';
 
 export const Benefits = () => {
-  const targetRef = useRef<HTMLDivElement | null>(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ['start start', 'end start'],
-  });
-
   return (
-    <ParallaxSection
-      offset={['end end', 'end start']}
-      parallaxValues={[0, 400]}
-    >
-      <section className={`${styles.benefitsWrapper}`} ref={targetRef}>
-        <div className={styles.stickyContainer}>
-          <Discover scrollYProgress={scrollYProgress} />
-          <Marquee
-            text={'Discover meet MINT credit card. Safe, private and secure.'}
-            scrollYProgress={scrollYProgress}
-            outputRange={['75%', '-100%']}
-          />
+    <ParallaxSection parallaxValues={[10, 20]}>
+      <section className={styles.benefitsWrapper}>
+        <div className={`${styles.titleContainer} container`}>
+          <h2 className="h2">With MINT, </h2>
+          <h2 className="h2">it really adds up.</h2>
         </div>
+        <Carousel />
       </section>
     </ParallaxSection>
   );
