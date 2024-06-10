@@ -108,7 +108,9 @@ export const CTA = ({ className }: CTAProps) => {
             className={styles['BecomeDistributorSection__content_inner']}
           >
             <h2 className="h1">
-              <AnimatedText title>it all starts in the mint app</AnimatedText>
+              <AnimatedText title>
+                it all starts in the eucalyptus app
+              </AnimatedText>
             </h2>
             <p
               className={
@@ -140,7 +142,7 @@ export const CTA = ({ className }: CTAProps) => {
           className={styles['top']}
         >
           <motion.div className={styles['title']} style={titleStyles}>
-            <h6 className="h6">Mint Card</h6>
+            <h6 className="h6">Eucalyptus Card</h6>
             <h4 className="h4">Crafted Coin Creations</h4>
           </motion.div>
           <motion.span

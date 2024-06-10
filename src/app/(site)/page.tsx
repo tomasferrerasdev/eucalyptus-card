@@ -3,6 +3,7 @@ import {
   CTA,
   Discover,
   FAQs,
+  Footer,
   Hero,
   PageTransitionLayout,
 } from '@/components';
@@ -17,6 +18,7 @@ export default function Home() {
         <Discover />
         <FAQs />
         <CTA />
+        <Footer />
       </main>
     </PageTransitionLayout>
   );
