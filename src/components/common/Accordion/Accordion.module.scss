@@ -1,0 +1,55 @@
+@import '@/_styles/variables';
+
+.item {
+  list-style: none;
+  border-bottom: 1px solid var(--gray-300);
+
+  &__title {
+    position: relative;
+    cursor: pointer;
+    font-family: var(--font-uber-move);
+    padding: 24px 0;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__arrow {
+      width: 14px;
+      height: 14px;
+      transition: var(--move-duration) var(--ease);
+
+      &.active {
+        transform: rotateX(180deg);
+        path {
+          fill: var(--accent);
+        }
+      }
+    }
+
+    @media (width >= $breakpoint-tablet) {
+      padding: 24px;
+    }
+  }
+
+  &__dropdownMenu {
+    font-family: var(--font-uber-move);
+    padding: 0;
+
+    @media (width >= $breakpoint-tablet) {
+      padding: 0 24px;
+    }
+
+    &_description {
+      padding: 0 0 24px;
+      color: var(--gray-800);
+      font-family: var(--font-family-secondary);
+      line-height: 1.563em;
+
+      a {
+        color: var(--primary-color);
+      }
+    }
+  }
+}
