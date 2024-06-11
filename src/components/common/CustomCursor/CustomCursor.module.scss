@@ -1,3 +1,5 @@
+@import '@/_styles/variables';
+
 .cursor {
   position: fixed;
   width: 16px;
@@ -6,14 +8,9 @@
   border-radius: 50%;
   pointer-events: none;
   z-index: 99999;
-}
+  display: none;
 
-.cursorFollower {
-  position: fixed;
-  width: 32px;
-  height: 32px;
-  border: 1px solid var(--accent);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 99999;
+  @media (width >= $breakpoint-mob) {
+    display: block;
+  }
 }
