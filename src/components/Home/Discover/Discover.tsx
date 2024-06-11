@@ -21,7 +21,9 @@ export const Discover = () => {
           <QRScan />
           <Coin scrollYProgress={scrollYProgress} />
           <Marquee
-            text={'Discover meet MINT credit card. Safe, private and secure.'}
+            text={
+              'Discover meet Eucalyptus credit card. Safe, private and secure.'
+            }
             scrollYProgress={scrollYProgress}
             outputRange={['75%', '-100%']}
           />

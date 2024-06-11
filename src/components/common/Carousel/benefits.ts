@@ -5,11 +5,12 @@ export const BENEFITS = [
   },
   {
     id: 1,
-    label: 'Plus, earn up to 3% cash back with the MINT Cashback Mastercard',
+    label:
+      'Plus, earn up to 3% cash back with the Eucalyptus Cashback Mastercard',
   },
   {
     id: 2,
-    label: 'Plus, earn interest on that cash back with MINT Savings',
+    label: 'Plus, earn interest on that cash back with Eucalyptus Savings',
   },
   {
     id: 3,
