@@ -19,7 +19,10 @@ const uberMove = localFont({
 
 export const metadata: Metadata = {
   title: 'Eucalyptus card',
-  description: 'Eucalyptus card',
+  metadataBase: new URL('https://eucalyptus-card.vercel.app/'),
+  openGraph: {
+    images: '/og.png',
+  },
 };
 
 export default function RootLayout({
